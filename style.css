@@ -50,6 +50,9 @@ p {
 
 table {
     color: white;
+    background-image: url("pictures/nakedtsoi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
 }
 .image2 {
