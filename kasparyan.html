@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>фан-сайт группы кино</title>
-    <link rel ="stylesheet" href ="style.css">
+    <title>Фан-сайт группы Кино</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Опционально: подключение Bootstrap JS и зависимостей -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="./index.html">Главная</a>
-        <a href= "./tsoi.html">Солист легендарной группы</a>
-        <a href="./kasparyan.html" class = "active" >Гитарист</a>
-        <a href="./guryanov.html">Барабанщик</a>
-        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD%D0%BE_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)" target="_blank">все про кино</a>
-        <a href = "kasparyan.html#bookmark">Табы "Пачка Сигарет"</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="./index.html">Главная </a>
+                <a class="nav-item nav-link" href="./tsoi.html">Солист легендарной группы</a>
+                <a class="nav-item nav-link active" href="./kasparyan.html">Гитарист</a>
+                <a class="nav-item nav-link" href="./guryanov.html">Барабанщик</a>
+                <a class="nav-item nav-link" href="https://ru.wikipedia.org/wiki/Кино_(группа)" target="_blank">Все про Кино</a>
+                <a class="nav-item nav-link" href="kasparyan.html#bookmark">Табы "Пачка Сигарет"</a>
+                <a class ='nav-item nav-link' href ="sus.html">Мерч по РОКУ </a>
+            </div>
+        </div>
     </nav>
-    <h1>Гитарист Кино - Александр Каспарян</h1>
-    <img src="pictures/kasparyan.jpg" alt="Александр Каспарян" width = 400 height = 400 class="image1">
-    <div class="text">
-        <p>
-            Александр Каспарян - гитарист легендарной российской рок-группы Кино. Он присоединился к группе в 1982 году и стал неотъемлемой частью ее звучания. Каспарян внес значительный вклад в развитие рок-музыки в СССР и оставил неизгладимый след в истории российской музыки.
-        </p>
-        <p>
-            Виртуозное владение гитарой, уникальный стиль игры и творческий подход Александра Каспаряна сделали его одним из самых узнаваемых и влиятельных гитаристов своего времени. Его соло и риффы стали неотъемлемой частью хитов Кино, таких как "Группа крови", "Звезда по имени Солнце" и многих других.
-        </p>
-        <p>
-            Каспарян продолжал активно выступать и записываться с Кино до распада группы в 1990 году. После этого он продолжил свою музыкальную карьеру в других проектах и сотрудничал с различными музыкантами. Он оставил незабываемый след в истории российской рок-музыки и до сих пор является источником вдохновения для многих гитаристов.
-        </p>
+
+    <div class="container">
+        <h1 class="mt-4">Гитарист Кино - Александр Каспарян</h1>
+        <!-- Адаптивное изображение с Bootstrap -->
+        <img src="pictures/kasparyan.jpg" alt="Александр Каспарян" class="img-fluid" style="max-width: 100%; height: auto;">
+
+        <div class="text">
+            <!-- Текстовое содержимое -->
+        </div>
+
+        <!-- Адаптивное изображение с Bootstrap -->
+        <img src="pictures/pachka.png" a id = "bookmark" class="img-fluid" alt="Табы 'Пачка Сигарет'" style="max-width: 100%; height: auto;">
+
+        <div class="text2 text-center">
+            <!-- Ссылка на табы песни -->
+        </div>
     </div>
 
-    <img src ="pictures/pachka.png" width = 1600 height = 400 class ='image2' align="center">
-    <div class ="text2" align = 'center'>
-        <a id="bookmark">Табы к легендарной песне "Пачка Сигарет" под авторством Каспаряна</a>
-    </div>
+    <!-- Подключение Bootstrap JS и зависимостей (если нужно использовать функционал, зависящий от JS) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-

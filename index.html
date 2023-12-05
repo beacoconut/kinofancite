@@ -2,71 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>фан-сайт группы кино</title>
-    <link rel ="stylesheet" href ="style.css">
+    <title>Фан-сайт группы Кино</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap JS и зависимости -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="./index.html" class = "active">Главная</a>
-        <a href= "./tsoi.html">Солист легендарной группы</a>
-        <a href="./kasparyan.html">Гитарист</a>
-        <a href="./guryanov.html">Барабанщик</a>
-        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD%D0%BE_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)" target="_blank">все про кино</a>
-        <a href = "kasparyan.html#bookmark">Табы "Пачка Сигарет"</a>
-        </nav>
-    <h1> Альбомы группы Кино</h1>
-    <div class ="list-container">
-        <ul>
-          <li>45 (1982)</li>
-          <li>46 (1983) </li>
-          <li>Начальник Камчатки (1984) </li>
-          <li>Это не любовь (1985) </li>
-          <li>Ночь (1986)</li>
-          <li>★ Группа крови (1988) </li>
-          <li>★ Звезда по имени Солнце (1989) </li>
-          <li>★ Черный альбом (1991) </li>
-          <li>12 22 (2022)</li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="./index.html">Главная <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="./tsoi.html">Солист легендарной группы</a>
+                <a class="nav-item nav-link" href="./kasparyan.html">Гитарист</a>
+                <a class="nav-item nav-link" href="./guryanov.html">Барабанщик</a>
+                <a class="nav-item nav-link" href="https://ru.wikipedia.org/wiki/Кино_(группа)" target="_blank">Все про Кино</a>
+                <a class="nav-item nav-link" href="kasparyan.html#bookmark">Табы "Пачка Сигарет"</a>
+                <a class ='nav-item nav-link' href ="sus.html">Мерч по РОКУ </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Альбомы группы Кино</h1>
+        <div class="list-container">
+            <ul class="list-group">
+                <li class="list-group-item">45 (1982)</li>
+                <li class="list-group-item">46 (1983)</li>
+                <li class="list-group-item">Начальник Камчатки (1984)</li>
+                <li class="list-group-item">Это не любовь (1985)</li>
+                <li class="list-group-item">Ночь (1986)</li>
+                <li class="list-group-item">★ Группа крови (1988)</li>
+                <li class="list-group-item">★ Звезда по имени Солнце (1989)</li>
+                <li class="list-group-item">★ Черный альбом (1991)</li>
+                <li class="list-group-item">12 22 (2022)</li>
+            </ul>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="pictures/kino%20band.jpg" target="_blank">
+                <img src="pictures/kino%20band.jpg" class="img-fluid" alt="Участники группы" title="Участники группы">
+            </a>
+        </div>
+
+        <h2 class="mt-4">Наши мальчики</h2>
+
+        <h1 class="mt-4">Запишите себя в ряды фанатов группы Кино ниже:</h1>
+
+        <form action="https://www.yandex.ru/search?" class="mt-4" target="_blank">
+            <div class="form-group">
+                <label for="last-name">Фамилия:</label>
+                <input type="text" class="form-control" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="first-name">Имя:</label>
+                <input type="text" class="form-control" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Мобильный телефон:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата отправки:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
     </div>
-
-
-
-
-    <div align="center">
-        <a href="pictures/kino%20band.jpg" target="_blank">
-            <img src="pictures/kino%20band.jpg" alt="участники группы" width="600" height="400" align="center" title="участники группы">
-        </a>
-    </div>
-
-    <h2> наши мальчики </h2>
-
-    <h1> запишите себя в ряды фанатов группы кино ниже:</h1>
-
-    <form action="https://www.yandex.ru/search?" align='center' target="_blank">
-        <ul>
-            <li>
-          <label for="last-name">Фамилия:</label>
-          <input type="text" id="last-name" name="last-name" required>
-            </li>
-            <li>
-          <label for="first-name">Имя:</label>
-          <input type="text" id="first-name" name="first-name" required>
-<           </li>
-            <li>
-          <label for="phone">Мобильный телефон:</label>
-          <input type="tel" id="phone" name="phone" required>
-            </li>
-            <li>
-          <label for="email">E-Mail:</label>
-          <input type="email" id="email" name="email" required>
-            </li>
-            <li>
-          <label for="date">Дата отправки:</label>
-          <input type="date" id="date" name="date" required>
-            </li>
-          <button type="submit">Отправить</button>
-        </ul>
-    </form>
-
 </body>
 </html>
